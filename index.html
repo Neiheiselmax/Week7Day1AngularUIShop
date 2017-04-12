@@ -3,6 +3,8 @@
   <head>
   	<title>Hello World</title>
   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="css/main.css">
   </head>
@@ -12,7 +14,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-        <h2>SmiteGodz</h2>
+        <img class="flag" src="http://hzweb.hi-rezgame.net/hirezstudios/wp-content/uploads/2015/12/smite-logo-hzcom1.png" alt="">
         </div>
         <ul class="col-md-6">
           <li><a ui-sref='home'>Home</a></li>
@@ -21,11 +23,15 @@
         </ul>
         </div>
      </div>
+  
    </header>
 
    <div class="container">
     <div class="row">
       <section class="col-md-12" ui-view='content'></section>
+      <hr>
+      <weather class="col-md-12 weather" city="anchorage"></weather>
+      <hr>
     </div>
   </div>  
     
@@ -38,6 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='js/main.js'></script>
+    <script src='js/directives/weather.js'></script>
     <script src='js/services/API.js'></script>
     <script src='js/controllers/TableControllers.js'></script>
   </body>
