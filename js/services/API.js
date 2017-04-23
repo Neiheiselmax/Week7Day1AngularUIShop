@@ -6,13 +6,23 @@
         .factory('API', function($http){
 
         return {
-        	getWeather:(city) => {
-		    	return $http({
-		    		type:"GET",
-		    		url:`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=7cf16558d759d14815306832bd7341e2&units=imperial`,
-		    	})
-		    }
-    	}
+        postImage:(image) => {
+          return $http({
+              method:"POST",
+              url:"http://instagramcloneclass.herokuapp.com/image/post",
+              data: image,
+              headers: {'X_CSRF_TOKEN': 'max'},
+            })
+        },
+      getImage:(image) => {
+          return $http({
+              method:"GET",
+              url:"http://instagramcloneclass.herokuapp.com/images",
+              data: image,
+              headers: {'X_CSRF_TOKEN': 'max'},
+            })
+        },
+      }
     });
 
 })();

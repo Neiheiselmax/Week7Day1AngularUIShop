@@ -1,56 +1,30 @@
 body{
 	font-family: 'Macondo', cursive;
-	background-image: url('https://u.cubeupload.com/iSx4L2.png');
-	background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100% 100%;
-
-
 }
 
 header{
-	background-color: darken(blue, 40);
 	color: white;
-	.flag{
+
+	.logo{
+		margin: 0px auto;
+		display: block;
+		width: 100px;
 		height: 100px;
-		width: 300px;
-		display: inline-block;
-
-
+		margin-top: 20px;
 	}
-	h2{
-		font-size: 60px;
-	}
+	.nav{
+		text-align: center;
+		margin-top: 20px;
+		font-size: 22px;
 
-	ul{
-		vertical-align: middle;
-		padding-top: 20px;
+		li{
+			a{
+				display: inline;
+				padding-left: 40px;
+			}
+			display: inline;
+		}
 	}
-	ul li{
-		display: inline;
-		padding-right: 30px;
-		font-size: 36px;
-		color: white;
-		text-shadow: 0px 0px 10px yellow;
-		text-decoration: none;
-
-	}
-	a:hover{
-		color: white;
-		text-decoration: none;
-	}
-
-	a:visited{
-		color: white;
-	}
-
-	a:active{
-		color: white;
-	}
-}
-
-img {
-	max-width:100%;
 }
 
 footer{
@@ -99,7 +73,7 @@ input[type=text] {
     background-color: white;
     background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3WUWOAs1nsYRj7zsKVhWeC4ETFmVVssAs_eFHjYr2ELTKg1nBVEOtuA');
     background-size: 30px 30px;
-    background-position: 2px 10px; 
+    background-position: 2px 10px;
     box-shadow: 0px 0px 10px black;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
@@ -113,7 +87,7 @@ input[type=text]:focus {
 }
 
 
-.SingleGod{
+.SinglePhoto{
 	margin: 0px auto;
 	display: block;
 	text-align: center;
@@ -137,34 +111,3 @@ input[type=text]:focus {
 
 	}
 }
-
-.featuredGod{
-	color: black;
-	text-shadow: 0px 0px 10px grey;
-	margin-bottom: 50px;
-	h2{
-		display: inline;
-	}
-	h3{
-		display: inline-block;
-	}
-}
-
-.weather{
-	text-align: center;
-	font-size: 30px;
-	color: yellow;
-	text-shadow: 0px 0px 4px black;
-	margin-bottom: 30px;
-}
-
-.sun{
-	display: inline;
-	width: 200px;
-	height: 200px;
-}
-
-
-
-
-

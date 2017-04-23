@@ -11,32 +11,25 @@
   <body>
 
   <header>
-    <div class="container">
+    <div>
       <div class="row">
-        <div class="col-md-6">
-        <img class="flag" src="http://hzweb.hi-rezgame.net/hirezstudios/wp-content/uploads/2015/12/smite-logo-hzcom1.png" alt="">
+        <div class="col-md-12">
+        <img class="logo" src="https://img.clipartfest.com/47f04831a4c21840d9f7345e2fe71abd_instagram-logo-clipart-instagram-camera-clip-art_309-298.png" alt="">
         </div>
-        <ul class="col-md-6">
+      </div>
+      <div class="row">
+        <ul class="col-md-6 col-md-offset-3 nav">
           <li><a ui-sref='home'>Home</a></li>
-          <li><a ui-sref='godType'>Types of Gods</a></li>
-          <li><a ui-sref='gods'>All Gods</a></li>
+          <li><a ui-sref='addPhoto'>Add Photo</a></li>
         </ul>
-        </div>
+      </div>
      </div>
-  
    </header>
 
-   <div class="container">
-    <div class="row">
-      <section class="col-md-12" ui-view='content'></section>
-      <hr>
-      <weather class="col-md-12 weather" city="anchorage"></weather>
-      <hr>
-    </div>
-  </div>  
-    
+
+
     <footer class="col-md-12">
-      <p>ALL RIGHTS RESERVED HI-REZ STUDIOS</p>
+      <p>INSTAGRAM</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
@@ -44,7 +37,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='js/main.js'></script>
-    <script src='js/directives/weather.js'></script>
     <script src='js/services/API.js'></script>
     <script src='js/controllers/TableControllers.js'></script>
   </body>

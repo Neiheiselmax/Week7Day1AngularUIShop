@@ -1,18 +1,4 @@
 
-<div class="col-md-6 top">
-<h2>Welcome!</h2>
-
-<p>Learn About the Different Smite Gods!</p>
-
-<form>
-  <input type="text" name="search" placeholder="Search For Your Favorite God">
-</form>
-</div>
-
-<div class="col-md-6 featuredGod">
-	<h1>Featured God:</h1>
-	<img src="/images/Cernunnos.jpg" alt="">
-	
-	<h2>Cernunnos</h2>
-	<img src="/images/Gems.png" alt=""><h3>200</h3>
+<div ng-repeat="images in vm.image track by $index" class="col-md-6 top">
+<h1><img src= {{vm.image}} </h1>
 </div>

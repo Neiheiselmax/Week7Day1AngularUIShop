@@ -16,36 +16,21 @@
 	      views: {
 		      'content': {
 		        templateUrl: '../partials/home.html',
-		      }
+            controller:'TableController',
+            controllerAs:'vm'
+            }
 		   }
 	    })
-	    .state('godType', {
-	      url: '/GodType',
+	    .state('addPhoto', {
+	      url: '/AddPhoto',
 	      views: {
 		      'content': {
-		        templateUrl: '../partials/godType.html',
-		       
-		      }
-		   }
-	    })
-	    .state('gods', {
-	      url: '/AllGods',
-	      views: {
-		      'content': {
-		        templateUrl: '../partials/allGods.html',
-		        
-		      }
-		   }
-	    })
-	    .state('singleCharacter', {
-	      url: '/CharacterInfo',
-	      views: {
-		      'content': {
-		        templateUrl: '../partials/singleCharacter.html',
-		      
+		        templateUrl: '../partials/addPhoto.html',
+            controller:'TableController',
+            controllerAs:'vm'
 		      }
 		   }
 	    })
     });
-        
+
 })();
